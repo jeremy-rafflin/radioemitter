@@ -22,12 +22,15 @@ Actualy, to create a device, you must create it in the database.
 
 Create a device in the 'device' table with 'radioemitter' for service culumn value. 
 For exemple  :
+
 | name 				| protocol 	| service 		| identifier 	| room 	| id 	| createdAt | updatedAt |
 | ---| ---| ---| ---| ---| ---| ---| ---|
 | Petite lumière salon 	| radio 	| radioemitter 	| 16129806 		| 2 	| 5 	|  			| 	 |
 
-Create the devicetype correspondance with 'binary' (for binary device, min is 0 and max is 1) for the 'type' and the code af your radio device for the 'identifier' .
+Create the devicetype correspondance with 'binary' (for binary device, min is 0 and max is 1) for the 'type' and the code af your radio device for the 'identifier'.
+
 For exemple : 
+
 | type | tag | sensor | unit | min | max | display | device | id | createdAt | updatedAt | name | identifier |
 | ---| ---| ---| ---| ---| ---| ---| ---| ---| ---| ---| ---| ---|
 | binary | lumiere_salon | 0 | 0 | 1 | 1 | 5 | 4 | lumiere_salon | 16129806 |
